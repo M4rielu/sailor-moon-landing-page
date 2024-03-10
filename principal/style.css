@@ -19,10 +19,92 @@
     --font-03: "Pompiere", sans-serif;
     --font-04: 'Berthold Block', sans-serif;
 } 
+/*mobile*/
+@media only screen and (max-width: 800px) {
+    #tittle{
+        font-size: 29.5px;
+        padding-top: 8px;
+    }
+    #header-text{
+        font-size: 14px;
+    }
+    #header-list{
+        font-size: 12px;
+        margin-top: 20px;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .link{
+        padding: 4px;
+    }
+}
+/*pc*/
+@media only screen and (min-width: 801px) {
+    #tittle{
+        font-size: 39.4px;
+        padding-top: 15px;
+    }
+    #header-text{
+        font-size: 11.9px;
+    }
+    #header-list{
+        font-size: 15px;
+        margin-top: 45px;
+        margin-left: 8px;
+        padding-bottom: 18px;
+    }
+    .link{
+        padding: 8px;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    background-color: var(--color-04);
+    color: var(--font-color);
+    text-align: center;
+}
+#tittle{
+    font-family: var(--font-02);
+}
+#header-text{
+    font-family: var(--font-03);
+}
+#header-list{
+    display: flex;
+    list-style: none;
+    font-family: var(--main-font);
+    font-weight: bold;
+}
+.link{
+    color: var(--font-color);
+    text-decoration: none;
+}
+body{
+    background-color: var(--background-color);
+}
 main{
     min-width: 300px;
     max-width: 800px;
 }
 .image{
     width: 100%;
+}
+#primary-content{
+    background-color: var(--color-03);
+}
+#footer{
+    background-color: var(--color-04);
+    font-family: var(--main-font);
+    color: var(--font-color);
+    text-align: center;
+    padding: 12px;
+}
+#footer-link{
+    color: var(--font-color);
+    font-weight: bold;
+    text-decoration: none;
 }
