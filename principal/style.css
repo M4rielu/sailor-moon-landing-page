@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dr+Sugiyama&family=Pompiere&display=swap');
-@font-face {
-    font-family: 'Berthold Block', sans-serif;
-    src: url('../fontes/Block\ Berthold\ Regular.ttf') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
 @font-face {
     font-family: 'Flatory Sans', sans-serif;
     src: url('../fontes/flatory-sans-bold-condensed.ttf') format('truetype')
@@ -13,11 +10,11 @@
     --background-color: #9ec8ff;
     --color-03: #efe7e4;
     --color-04: #11468c;
-    --gradient: #9e2a2d #e71d4f #efe7e4;
+    --gradient: linear-gradient(to right, #9e2a2e94,#e71d5079, #efe7e4c7);
     --main-font: 'Flatory Sans', sans-serif;
     --font-02: "Dr Sugiyama", cursive;
     --font-03: "Pompiere", sans-serif;
-    --font-04: 'Berthold Block', sans-serif;
+    --font-04: "Alegreya Sans", sans-serif;
 } 
 /*mobile*/
 @media only screen and (max-width: 800px) {
@@ -89,12 +86,16 @@ body{
 main{
     min-width: 300px;
     max-width: 800px;
+    font-family: var(--main-font);
 }
 .image{
     width: 100%;
 }
 #primary-content{
     background-color: var(--color-03);
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
 }
 #footer{
     background-color: var(--color-04);
@@ -107,4 +108,30 @@ main{
     color: var(--font-color);
     font-weight: bold;
     text-decoration: none;
+}
+#main-title{
+    font-family: var(--font-04);
+    font-weight: 900;
+    color: var(--color-02);
+    font-size: 33px;
+    margin-left: 12px;
+}
+.article-title{
+    font-family: var(--font-04);
+    font-weight: 900;
+    font-size: 20px;
+    color: var(--color-02);
+    padding: 4px 12px;
+    margin: 22px 0px;
+    background: var(--gradient);
+}
+.text{
+    font-size: 13px;
+    font-weight: bold;
+    text-indent: 8px;
+    margin: 19px 0px;
+}
+.article-links{
+    text-decoration: none;
+    color: #09502e;
 }
