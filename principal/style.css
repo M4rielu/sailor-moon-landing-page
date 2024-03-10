@@ -91,6 +91,12 @@ main{
 .image{
     width: 100%;
 }
+#img-container{
+    display: flex;
+}
+#img-container img{
+    width: 100%;
+}
 #primary-content{
     background-color: var(--color-03);
     padding: 15px;
