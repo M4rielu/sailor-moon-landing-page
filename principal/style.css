@@ -161,6 +161,7 @@
 *{
     margin: 0;
     padding: 0;
+    text-align: justify;
 }
 #header{
     background-color: var(--color-04);
@@ -236,6 +237,7 @@ main{
 }
 .text{
     font-weight: bold;
+    margin: 8px 20px;
 }
 .article-links{
     text-decoration: none;
