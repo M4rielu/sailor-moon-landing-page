@@ -90,6 +90,9 @@
         font-size: 39.4px;
         padding-top: 15px;
     }
+    header{
+        box-shadow: 0px 0px 8px 5px #11468c7e;
+    }
     #header-text{
         font-size: 13.9px;
     }
@@ -109,8 +112,9 @@
         padding: 12px;
     }
     main{
-        border-radius: 10px;
-        box-shadow: 5px 3px 8px 5px #11468c7e;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 0px 0px 8px 5px #11468c7e;
         margin: 0 auto;
         padding: 8px;
     }
@@ -179,6 +183,12 @@
     color: var(--font-color);
     text-decoration: none;
 }
+.link:hover{
+    background-color: #f2cf1dcc;
+    color: var(--color-03);
+    border-radius: 50px;
+    
+}
 body{
     background-color: var(--background-color);
 }
@@ -222,7 +232,7 @@ main{
     color: var(--color-02);
     background: var(--gradient);
     border-radius: 8px;
-    box-shadow: 1px 1px 5px 1px #9e2a2e57;
+    box-shadow: 0px 0px 5px 1px #9e2a2e57;
 }
 .text{
     font-weight: bold;
