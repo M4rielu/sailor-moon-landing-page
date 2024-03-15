@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Impact';
+    src: url(../fontes/impact.ttf) format(truetype);
+}
+@font-face {
+    font-family: 'Flatory Sans';
+    src: url(../fontes/flatory-sans-bold-condensed.ttf) format(truetype);
+}
+@media only screen and (min-width: 300px){
+    #button{
+        margin-bottom: 20px;
+    }
+    #image img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+@media only screen and (min-width: 801px){
+    body{
+        height: 100vh;
+    }
+}
+:root{
+    --main-font: 'Flatory', sans-serif;
+    --secondary-font: "Impact", sans-serif;
+    --background-color: #efe7e4;
+    --secondary-color: #d7a1b8;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--background-color);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+#error{
+    font-family: var(--main-font);
+    color: rgb(190, 187, 187);
+    font-size: 13px;
+    margin-top: 50px;
+}
+#title{
+    font-family: var(--secondary-font);
+    font-weight: 550;
+    font-size: 30.3px;
+    margin-top: 5px;
+}
+
+#loading-gif{
+    width: 700px;
+    margin-top: 16px;
+}
+#text{
+    font-family: var(--main-font);
+    margin-top: 45px;
+    font-size: 13px;
+}
+#button{
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 20px 25px;
+    margin-top: 11px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px 3px#dfc9c9;
+}
+#button-text{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
